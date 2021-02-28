@@ -211,6 +211,8 @@ function transform(object) {
       }
     }
   }
+  delete object['1']; delete object['2']; delete object['3']; delete object['4']; delete object['5']; delete object['8']; delete object['10'];
+
 
   return object;
   
@@ -218,7 +220,7 @@ function transform(object) {
 
 let newPointStructure = transform(oldPointStructure);
 
-
+console.log(newPointStructure);
 function runProgram() {
    initialPrompt();
    scorerPrompt();
